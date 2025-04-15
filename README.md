@@ -1,38 +1,45 @@
-Overview
-This is a simple Java-based cricket game simulation where the user plays a single-over match against a computer opponent. The game includes a coin toss, batting, and bowling choices, along with an outcome based on probability.
+Java Cricket Game – Console-Based Mini Match Simulation
 
-FEATURES:-
-Toss Mechanism: The user chooses "Heads" or "Tails" for the toss. If they win, they decide whether to bat or bowl first.
-Batting Mode: The user selects different shot types, and the game determines the outcome based on probability.
-Bowling Mode: The user selects different types of deliveries, and the game determines how the opponent plays.
-Match Outcome: The game announces the winner based on the scores.
+A fun and interactive **Cricket Match Simulator** built in Java, where you play a short 2-wicket, 6-ball innings against a computer opponent. Toss the coin, choose to bat or bowl, and see if you can outscore your opponent!
 
-HHOW TO PLAY:-
-Run the program in a Java-supported environment.
-Enter "Heads" or "Tails" to take part in the toss.
-If you win the toss, choose to bat or bowl first.
-If batting, select your shots:
+--------------------------------------------------------------------------------
 
-Defensive (0)
-Normal Shot (1)
-Aggressive Shot (2)
+Game Overview
 
-If bowling, select your ball type:
-Yorker (0)
-Bouncer (1)
-Full Toss (2)
+- A toss determines who bats/bowls first.
+- You can choose between **Defensive**, **Normal**, and **Aggressive** shots.
+- The computer chooses from **Yorker**, **Bouncer**, or **Full Toss** deliveries.
+- Each side plays a **6-ball innings** with **2 wickets**.
+- Runs are randomly determined based on the logic of shot type vs. ball type.
+- The winner is decided based on total runs at the end of both innings.
 
-The game will simulate a single over (6 balls per innings) and announce the result.
+--------------------------------------------------------------------------------
 
-CODE STRUCTURE:-
-Main Class (Main.java)
-Handles the toss and game flow.
+Game Mechanics
 
-Batting Function (batting())
-Allows the user to play their batting innings.
+Toss:
+- You choose **Heads** or **Tails**.
+- The winner of the toss decides whether to bat or bowl first.
 
-Bowling Function (bowling())
-Simulates the user's bowling session.
+Batting Options:
+- Defensive – Low risk, low reward
+- Normal – Balanced
+- Aggressive – High risk, high reward
 
-Runs Calculation (runs(int bat, int ball))
-Determines the outcome based on the user's choice and random probability.
+Bowling Options:
+- Yorker
+- Bouncer
+- Full Toss
+
+Runs are computed using probabilities to simulate realistic cricket outcomes (like dot balls, runs, or wickets).
+
+--------------------------------------------------------------------------------
+
+Features
+
+- Simple CLI-based UI
+- Simulates a mini 6-ball cricket innings
+- Toss logic with player choice
+- Strategy-based gameplay
+- Randomized outcome using probabilities
+- Displays live scorecard and final result
